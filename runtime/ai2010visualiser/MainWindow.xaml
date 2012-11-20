@@ -1,0 +1,26 @@
+﻿<Window x:Class="ai2010visualiser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="empty_inside's AI Contest 2010 Visualiser" Height="746" Width="526">
+    <Grid Background="#FFD4D4D4">
+        <Rectangle Name="rectangle1" Stroke="{x:Null}" Fill="White" Margin="-12,-27,-11,48" />
+        <Button Content="Close" Margin="0,0,10,10" Name="buttonClose" HorizontalAlignment="Right" Width="59" Height="28" VerticalAlignment="Bottom" Click="buttonClose_Click" />
+        <Button Content="Load" HorizontalAlignment="Left" Margin="10,0,0,10" Name="buttonLoad" Width="59" Height="28" VerticalAlignment="Bottom" Click="buttonLoad_Click" />
+        <Slider Height="28" Margin="196,0,84,55" Name="sliderTime" VerticalAlignment="Bottom" Maximum="0" SmallChange="1" TickFrequency="10" IsEnabled="False" ValueChanged="sliderTime_ValueChanged" />
+        <Button Content="&gt;|" Height="28" HorizontalAlignment="Right" Margin="0,0,12,55" Name="buttonEnd" VerticalAlignment="Bottom" Width="30" Click="buttonEnd_Click" />
+        <Button Content="|&lt;" Height="28" HorizontalAlignment="Left" Margin="124,0,0,55" Name="buttonStart" VerticalAlignment="Bottom" Width="30" Click="buttonStart_Click" />
+        <Button Content="&lt;&lt;" Height="28" HorizontalAlignment="Left" Margin="10,0,0,55" Name="buttonRewind" VerticalAlignment="Bottom" Width="30" Click="buttonRewind_Click" />
+        <Button Content="&lt;" Height="28" HorizontalAlignment="Left" Margin="160,0,0,55" Name="buttonStepBack" VerticalAlignment="Bottom" Width="30" Click="buttonStepBack_Click" />
+        <Button Content="&gt;&gt;" Height="28" Margin="82,0,0,55" Name="buttonFastForward" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="30" Click="buttonFastForward_Click" />
+        <Button Content="&gt;" Height="28" HorizontalAlignment="Right" Margin="0,0,48,55" Name="buttonStepForward" VerticalAlignment="Bottom" Width="30" Click="buttonStepForward_Click" />
+        <Button Content="&gt;" Height="28" HorizontalAlignment="Left" Margin="46,0,0,55" Name="buttonPlayPause" VerticalAlignment="Bottom" Width="30" Click="buttonPlayPause_Click" />
+        <Rectangle Margin="16,0,16,90" Name="rectangle2" Stroke="Gray" Height="1" VerticalAlignment="Bottom" />
+        <Canvas Name="m_CanvasUniverse" Margin="10,10,10,213"></Canvas>
+        <Rectangle HorizontalAlignment="Left" Margin="118,0,0,55" Name="rectangle3" Stroke="Black" Width="1" Height="28" VerticalAlignment="Bottom" />
+        <Button Content="About" Height="28" HorizontalAlignment="Right" Margin="0,0,77,10" Name="buttonAbout" VerticalAlignment="Bottom" Width="59" Click="buttonAbout_Click" />
+        <Label Content="Turn 0/0" Name="labelTurns" Width="136" HorizontalContentAlignment="Right" FontWeight="Bold" Height="27" VerticalAlignment="Top" HorizontalAlignment="Right" />
+        <CheckBox Content="Lines" Height="16" Name="checkBoxLines" Width="44" Panel.ZIndex="10" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10,0,0,210" />
+        <Canvas Margin="10,0,10,100" Name="m_CanvasGraph" Height="100" VerticalAlignment="Bottom" />
+        <Rectangle Height="1" Margin="16,0,16,206" Name="rectangle4" Stroke="Gray" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>
