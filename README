@@ -1,0 +1,2 @@
+This is a fairly crap solution to the Google AI Challenge 2010. Istr it was up at about 500 at one point, and one of the best (of the few) C# entries.
+I publish it because of the (fairly) interesting coding style: no mutable state, lots of infinite data structre generators, and memoisers.
